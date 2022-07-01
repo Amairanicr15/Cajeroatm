@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="inicio" id="inicio">
+        <!-- <img src="./52e06e07244a3590366669665ea540e3-icono-de-circulo-de-banco-3.png" alt=""> -->
+        <h1>CAJERO ATM</h1>
+        <div class="part-label">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="contrasena">Contraseña</label>
+        <input type="text" name="contrasena" id="contrasena">
+    </div>
+        <!-- <button class="btn-ingresar" onclick="ingresar()">Ingresar</button> -->
+        <button type="button" class="btn btn-primary fs-4 w-25 p-2" onclick="ingresar()">Ingresar</button>
+    </main>
+
+    <div class="acciones" id="acciones">
+        <h2 class="fs-1 p-3 mb-2 bg-primary text-white ">Bienvenidx <span id="nombre-usuario"></span></h2>
+        <p class="fs-5 text-secondary" id="info">Elige la operación que quieres realizar...</p>
+        <button class="boton btn btn-primary btn-lg" id="consultar">Consultar saldo</button>
+        <button class="boton btn btn-primary btn-lg" id="retirar">Hacer un retiro</button>
+        <button class="boton btn btn-primary btn-lg" id="ingresar">Hacer un depósito</button>
+        <button type="button" class="btn btn-outline-dark" onclick="salir()">Salir</button>
+    </div>
+        
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</html>
